@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+.todo-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 16px;
+}
+button.add-btn {
+  padding: 12px 20px;
+  border: none;
+  background: #5c67f2;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.add-btn:hover {
+  background: #4a54e1;
+}
+ul.todo-list {
+  list-style: none;
+  padding: 0;
+
+  margin: 0;
+}
+li.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+li.todo-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+.btn-group button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn-group button:hover {
+  color: #5c67f2;
+}
+
+.create_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.create_div:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.create_div_inside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.create_div_inside button {
+  padding: 6px 10px;
+  background-color: #5c67f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create_div_inside button:hover {
+  background-color: #434ee0;
+}
+
