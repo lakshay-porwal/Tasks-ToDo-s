@@ -15,7 +15,7 @@ function done(event) {
 
   const index = tasks.indexOf(old_task);
 
-  if (index !== -1) {
+  if (index !==-1) {
     if (Taskstatus[index] === 1) {
       Taskstatus[index] = -1;
       taskText.innerHTML = `<s>${tasks[index]}</s>`;
